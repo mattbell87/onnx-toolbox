@@ -1,0 +1,5 @@
+services:
+  toolbox:
+    build: .
+    volumes:
+      - ./:/root/files

@@ -1,5 +1,8 @@
 services:
   toolbox:
-    build: .
+    build:
+      dockerfile: python.dockerfile
+      context: .
     volumes:
-      - ./:/root/files
+      - ./files:/files
+    command: tail -f /dev/null
